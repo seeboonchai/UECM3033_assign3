@@ -28,7 +28,7 @@ if __name__ == "__main__":
   plt.show();
   
   #Plot the graph of y1 against y0
-  fig=plt.figure(1)
+  fig=plt.figure(2)
   plt.plot(sol[:,0], sol[:,1], 'g', label='y1 against y0');
   plt.title('y1 against y0 graph(0.1)')
   plt.legend(loc='best');
@@ -47,7 +47,7 @@ if __name__ == "__main__":
   sol = spln.odeint(system, inity, t, args=(a,b));
   
   #New graph of y0 and y1 against t
-  fig=plt.figure(1)
+  fig=plt.figure(3)
   plt.plot(t, sol[:,0], 'b', label='y0 against t');
   plt.plot(t, sol[:,1], 'r', label='y1 against t');
   plt.title('y against t graph(0.11)')
@@ -60,7 +60,7 @@ if __name__ == "__main__":
   plt.show();
   
   #New graph of y1 against y0
-  fig=plt.figure(1)
+  fig=plt.figure(4)
   plt.plot(sol[:,0], sol[:,1], 'g', label='y1 against y0');
   plt.title('y1 against  y0 graph(0.11)')
   plt.legend(loc='best');
